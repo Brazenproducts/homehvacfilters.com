@@ -21,6 +21,9 @@ tr{transition:background .2s}table tr:hover{background:#e0f7fa}
 nav{background:#fff;padding:14px 20px;position:sticky;top:0;z-index:100;box-shadow:0 1px 8px rgba(0,0,0,.06);border-bottom:3px solid #0891b2}
 nav .inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
 nav .logo{font-family:'Poppins',sans-serif;font-size:1.3rem;color:#0891b2;font-weight:700}
+.card-media{height:190px;overflow:hidden;background:#dbeafe}
+.card-media img{width:100%;height:100%;object-fit:cover;display:block}
+.use-card img{width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:12px;display:block}
 nav ul{list-style:none;display:flex;gap:22px}nav ul li a{color:#666;font-size:.9rem}nav ul li a:hover{color:#0891b2;text-decoration:none}
 .hero{background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('images/hero.png') center/cover;padding:50px 20px;text-align:center;display:flex;align-items:center;justify-content:center}
 .hero-inner{max-width:800px}
@@ -75,11 +78,11 @@ footer{background:#1e293b;padding:40px 20px 24px;margin-top:50px}
 <body>
 
 <nav><div class="inner">
-<a href="index.html" class="logo">🌀 HomeHVACFilters</a>
+<a href="index.html" class="logo">HomeHVACFilters</a>
 <ul><li><a href="index.html">Home</a></li><li><a href="merv-rating-guide.html">MERV Guide</a></li><li><a href="best-filters-allergies-pets.html">Allergies &amp; Pets</a></li><li><a href="best-hvac-filters-by-size.html">Size Guide</a></li><li><a href="how-often-change-filter.html">When to Change</a></li></ul>
 </div></nav>
 
-<section class="hero">
+<section class="hero" style="background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('images/hvac-filter-hero.jpg') center/cover">
 <div class="hero-inner">
 <span class="badge">🌀 2026 TOP PICKS</span>
 <h1>Best HVAC Filters — Ranked</h1>
@@ -94,6 +97,7 @@ footer{background:#1e293b;padding:40px 20px 24px;margin-top:50px}
 <div class="product-grid">
 
 <div class="product-card card animate-in">
+<div class="card-media"><img src="images/filter-install.jpg" alt="Filtrete HVAC air filter being installed in a residential return vent" loading="lazy"></div>
 <div class="product-card-body">
 <h3>Filtrete (3M) <span class="pick-label">🏆 Best Overall</span></h3>
 <div class="stars">★★★★★ <span style="color:#888;font-size:.82rem">4.8/5</span></div>
@@ -107,6 +111,7 @@ footer{background:#1e293b;padding:40px 20px 24px;margin-top:50px}
 </div>
 
 <div class="product-card card animate-in" style="border-top-color:#22c55e">
+<div class="card-media"><img src="images/air-filter-stack.jpg" alt="Nordic Pure pleated HVAC air filters stacked for home use" loading="lazy"></div>
 <div class="product-card-body">
 <h3>Nordic Pure <span class="pick-label" style="background:#22c55e">Best Value</span></h3>
 <div class="stars">★★★★★ <span style="color:#888;font-size:.82rem">4.7/5</span></div>
@@ -120,6 +125,7 @@ footer{background:#1e293b;padding:40px 20px 24px;margin-top:50px}
 </div>
 
 <div class="product-card card animate-in" style="border-top-color:#f59e0b">
+<div class="card-media"><img src="images/home-vent.jpg" alt="Honeywell home HVAC filter near a residential ceiling vent" loading="lazy"></div>
 <div class="product-card-body">
 <h3>Honeywell</h3>
 <div class="stars">★★★★☆ <span style="color:#888;font-size:.82rem">4.4/5</span></div>
@@ -133,6 +139,7 @@ footer{background:#1e293b;padding:40px 20px 24px;margin-top:50px}
 </div>
 
 <div class="product-card card animate-in" style="border-top-color:#8b5cf6">
+<div class="card-media"><img src="images/clean-air-home.jpg" alt="Lennox HVAC filter for improving indoor air quality in a modern home" loading="lazy"></div>
 <div class="product-card-body">
 <h3>Lennox</h3>
 <div class="stars">★★★★☆ <span style="color:#888;font-size:.82rem">4.3/5</span></div>
@@ -146,6 +153,7 @@ footer{background:#1e293b;padding:40px 20px 24px;margin-top:50px}
 </div>
 
 <div class="product-card card animate-in" style="border-top-color:#888">
+<div class="card-media"><img src="images/air-filter-stack.jpg" alt="Aerostar MERV home air filters for budget HVAC maintenance" loading="lazy"></div>
 <div class="product-card-body">
 <h3>Aerostar</h3>
 <div class="stars">★★★★☆ <span style="color:#888;font-size:.82rem">4.1/5</span></div>
@@ -159,6 +167,7 @@ footer{background:#1e293b;padding:40px 20px 24px;margin-top:50px}
 </div>
 
 <div class="product-card card animate-in" style="border-top-color:#888">
+<div class="card-media"><img src="images/filter-install.jpg" alt="FilterBuy replacement HVAC filter for standard home return grilles" loading="lazy"></div>
 <div class="product-card-body">
 <h3>FilterBuy</h3>
 <div class="stars">★★★★☆ <span style="color:#888;font-size:.82rem">4.0/5</span></div>
@@ -198,18 +207,21 @@ footer{background:#1e293b;padding:40px 20px 24px;margin-top:50px}
 <h2 class="section-title">Best Filter for Your Situation</h2>
 <div class="use-cards">
 <div class="use-card card animate-in">
+<img src="images/clean-air-home.jpg" alt="HVAC air filter setup for allergy relief and cleaner indoor air" loading="lazy">
 <div class="emoji">🤧</div>
 <h3>Allergies</h3>
 <p>MERV 11-13. Catches pollen, mold spores, and fine dust without starving your HVAC system.</p>
 <div class="rec">→ Filtrete 1500 (MERV 12) or Nordic Pure MERV 12</div>
 </div>
 <div class="use-card card animate-in" style="border-left-color:#f59e0b">
+<img src="images/home-vent.jpg" alt="Home HVAC filter helping with pet hair and dander control" loading="lazy">
 <div class="emoji">🐕</div>
 <h3>Pets</h3>
 <p>MERV 10-11 and change every 60 days. Pet hair clogs fast — pleated filters help.</p>
 <div class="rec">→ Filtrete 1000 (MERV 11) or Honeywell FPR 9</div>
 </div>
 <div class="use-card card animate-in" style="border-left-color:#22c55e">
+<img src="images/air-filter-stack.jpg" alt="Residential HVAC filters for everyday whole-home air filtration" loading="lazy">
 <div class="emoji">🏠</div>
 <h3>General Use</h3>
 <p>MERV 8 is the sweet spot. Good filtration, minimal airflow restriction, affordable.</p>
